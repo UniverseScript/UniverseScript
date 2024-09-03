@@ -197,14 +197,13 @@ end
     ct("reset all")
     ct("h \n\n\n Crashed by haxx LOL")
     ct("name all I D I O T!")
-    ct('fogend 50')
-    ct('flash')
-    ct("dog all all all all all               discord")
-    ct("dog all all all all all               discord")
+    ct("fogend 50")
+    ct("flash")
+    ct("dog all all all all all discord")
+    ct("dog all all all all all discord")
     task.wait(1.5)
-    crash2
-end
-
+    return
+    
       if cmd == "grail" then
         plrcheck(args1)
         for i = 1, args2 do
