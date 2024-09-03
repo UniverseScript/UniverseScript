@@ -50,7 +50,6 @@ local cmds = {
 "bl2 player -- this doesnt unbl, cuz this custom bl also hatkicks the player.",
 "crash2 --this will crash the server, but in a funny way",
 "Crash -- silcrash.",
-
 "Who crashed -- vg",
 "Who crashed? -- Orinthian vg",
 "Im not showing you antis lol the only thing i tell you is that you turn them on and off by saying on and off after the command",
