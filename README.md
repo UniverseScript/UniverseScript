@@ -158,7 +158,9 @@ end
 -- Add this inside the plr.Chatted:Connect function
 if cmd == "Dcrash" then
   for i = 1, 100 do
+  wait(1)
     ct("clone all all all discord")
+    wait(1)
     ct("dog all all all discord")
   end
   PtSH()
