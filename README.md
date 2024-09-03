@@ -47,7 +47,10 @@ local cmds = {
 "laser plr amt delay(opt)",
 "setgplr -- Sets a target",
 "kick plr--hatkick",
-"bl2 player -- this doesnt unbl, cuz this custom bl also hatkicks the player!",
+"bl2 player -- this doesnt unbl, cuz this custom bl also hatkicks the player.",
+"crash2 --this will crash the server, but in a funny way",
+"Crash -- silcrash.",
+
 "Who crashed -- vg",
 "Who crashed? -- Orinthian vg",
 "Im not showing you antis lol the only thing i tell you is that you turn them on and off by saying on and off after the command",
@@ -188,6 +191,19 @@ end
           v.GripPos = Vector3.new(m:sub(9))
         end
       end
+
+      if cmd == "crash2" then
+    ct("gchar all masterplayerguy1234")
+    ct("reset all")
+    ct("h \n\n\n Crashed by haxx LOL")
+    ct("name all I D I O T!")
+    ct('fogend 50')
+    ct('flash')
+    ct("dog all all all all all               discord")
+    ct("dog all all all all all               discord")
+    task.wait(1.5)
+    crash2
+end
 
       if cmd == "grail" then
         plrcheck(args1)
