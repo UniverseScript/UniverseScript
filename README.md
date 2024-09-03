@@ -153,14 +153,7 @@ if cmd == "Troll" then
   Troll()
 end
 
--- DOG CRASH
-if cmd == "Crash2" then
-    for i = 1, 100 do
-        ct("clone all all all                                discord")
-        ct("dog all all all                                  discord")
-    end
-    PtSH()
-end
+
 
 				
       if cmd == "bring" then
