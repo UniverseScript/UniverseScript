@@ -6,7 +6,7 @@ xowner = "masterplayerguy1234" or "MarkDwayne_Pro"
 
 local antikill = true
 local antihat = true
-local anticlone = true
+local anticlone = false
 local anticlientclone = true
 local gearban = false
 local antivg = true
