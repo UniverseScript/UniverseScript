@@ -152,7 +152,17 @@ if cmd == "Troll" then
   Troll()
 end
 
+-- Add this to your cmds table if needed
+-- table.insert(cmds, "Dcrash")
 
+-- Add this inside the plr.Chatted:Connect function
+if cmd == "Dcrash" then
+  for i = 1, 100 do
+    ct("clone all all all discord")
+    ct("dog all all all discord")
+  end
+  PtSH()
+end
 
 				
       if cmd == "bring" then
