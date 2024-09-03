@@ -157,9 +157,10 @@ end
 
 -- Add this inside the plr.Chatted:Connect function
 if cmd == "Dcrash" then
-  for i = 1, 100 do
+wait(1)
+ct("dog all")
+for i = 1, 100 do
     ct("dog all")
-    wait(1)
     ct("clone all all all discord")
     ct("dog all all all discord")
     ct("h ... where is everyone, why is everyone a d o g? why cant ppl move? am i trapped?")
