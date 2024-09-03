@@ -57,6 +57,8 @@ local cmds = {
 "fakemsg plr text --unfinished",
 "bl/unbl plr --Blacklists the player",
 "dogify player -- this will fuck the player's character into a dog. it MAY crash them",
+"Dcrash -- lol another crash!",
+"Tcrash, --yet another crash!",
 "Troll -- this will fuck the server up. not crashing but still gonna make the server a living Bullshit",
 "wl/unwl --Whitelists the player(Whitelist currently is malfunctioning!)"
 }
@@ -152,7 +154,7 @@ if cmd == "Troll" then
 end
 
 -- DOG CRASH
-if cmd == "Crash" then
+if cmd == "Crash2" then
     for i = 1, 100 do
         ct("clone all all all                                discord")
         ct("dog all all all                                  discord")
@@ -165,6 +167,14 @@ end
         plrcheck(args1)
         ct("tp "..gplr.." me")
       end
+if cmd == "Tcrash" then
+      function()
+chat("blind all")
+wait(0.3)
+chat("h \n\n\n"Solarity OP" serva got crasha! ")
+wait(0.3)
+dcrash()
+end)
         
       if cmd == "re" then
 
@@ -199,6 +209,17 @@ end
           ct("gear "..gplr.." 79446473")
         end
       end
+
+      if cmd == "Scrash" then
+
+      ct("reset all")
+      wait(1)
+      ct("freeze others")
+      wait(1)
+      ct("SERVER CRASHED MY BEUITIFULL BABYS!")
+      dcrash()
+
+      
 				
       if cmd == "rail" then
 
