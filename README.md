@@ -167,14 +167,7 @@ end
         plrcheck(args1)
         ct("tp "..gplr.." me")
       end
-if cmd == "Tcrash" then
-      function()
-chat("blind all")
-wait(0.3)
-chat("h \n\n\n"Solarity OP" serva got crasha! ")
-wait(0.3)
-dcrash()
-end)
+
         
       if cmd == "re" then
 
