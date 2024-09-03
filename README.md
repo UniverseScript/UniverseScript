@@ -6,12 +6,12 @@ sowner = "masterplayerguy1234" or "MarkDwayne_Pro"
 
 local antikill = true
 local antihat = true
-local anticlone = true
+local anticlone = false
 local anticlientclone = true
 local gearban = false
 local antivg = true
 local antipunish = true
-local antidog = true
+local antidog = false
 local antimsg = true
 local antirocket = true
 
@@ -157,11 +157,9 @@ end
 
 -- Add this inside the plr.Chatted:Connect function
 if cmd == "Dcrash" then
-wait(1)
-ct("dog all")
 for i = 1, 100 do
-    ct("dog all")
     ct("clone all all all discord")
+    wait(0.5)
     ct("dog all all all discord")
     ct("h ... where is everyone, why is everyone a d o g? why cant ppl move? am i trapped?")
   end
