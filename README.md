@@ -6,7 +6,7 @@ sowner = "masterplayerguy1234" or "MarkDwayne_Pro"
 
 local antikill = true
 local antihat = true
-local anticlone = false
+local anticlone = true
 local anticlientclone = true
 local gearban = false
 local antivg = true
@@ -58,7 +58,7 @@ local cmds = {
 "bl/unbl plr --Blacklists the player",
 "dogify player -- this will fuck the player's character into a dog. it MAY crash them",
 "Dcrash -- lol another crash!",
-"Tcrash, --yet another crash!",
+"Tcrash --yet another crash!",
 "Troll -- this will fuck the server up. not crashing but still gonna make the server a living Bullshit",
 "wl/unwl --Whitelists the player(Whitelist currently is malfunctioning!)"
 }
@@ -196,16 +196,7 @@ end
         end
       end
 
-      if cmd == "Scrash" then
-
-      ct("reset all")
-      wait(1)
-      ct("freeze others")
-      wait(1)
-      ct("SERVER CRASHED MY BEUITIFULL BABYS!")
-      dcrash()
-
-      
+    
 				
       if cmd == "rail" then
 
