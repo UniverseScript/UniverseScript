@@ -2,7 +2,7 @@
 
 wait(1)
 
-xowner = "masterplayerguy1234" or "MarkDwayne_Pro"
+sowner = "masterplayerguy1234" or "MarkDwayne_Pro"
 
 local antikill = true
 local antihat = true
@@ -36,7 +36,7 @@ local rtx = {
 }
 
 local blacklist = {"Raysdamain"}
-local whitelist = {"atprog", "t_echr", "IceStuds"}
+local whitelist = {"raldreddd", "t_echr", "IceStuds"}
 
 local cmds = {
 
@@ -192,18 +192,7 @@ end
         end
       end
 
-      if cmd == "crash2" then
-    ct("gchar all masterplayerguy1234")
-    ct("reset all")
-    ct("h \n\n\n Crashed by haxx LOL")
-    ct("name all I D I O T!")
-    ct("fogend 50")
-    ct("flash")
-    ct("dog all all all all all discord")
-    ct("dog all all all all all discord")
-    task.wait(1.5)
-    return
-    
+      
       if cmd == "grail" then
         plrcheck(args1)
         for i = 1, args2 do
@@ -273,19 +262,18 @@ end
         plrcheck(args1)
         local target = gplr
         Regen()
-        ct("setgrav "..target.." -1000")
-        ct("jump "..target)
 	wait(0.2)
         ct("size "..target.." 3")
+	ct("looks like someone is gettin kicked out LOL")
         while plrserv:FindFirstChild(target) do
 
-          wait(0.5)
+          wait(0.2)
           for i = 1, 100 do
             ct("hat "..gplr.." 18137588505")
           end
             
         end
-        ct("h \n\n\n"..target..": * I ran away.\n\n\n")
+        ct("h \n\n\n"..target..": * Error. Try again!.\n\n\n")
       end
         
         
@@ -433,7 +421,7 @@ end
         end
       end
         
-      if cmd == "antivg" then
+      if cmd == "Anti Crash" then
         if args1 == "on" then
           antivg = true
         elseif args1 == "off" then
