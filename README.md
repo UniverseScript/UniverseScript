@@ -35,7 +35,7 @@ local rtx = {
   sunrise = {"outdoorambient 0.7 0.7 0.7", "ambient 100 0 100", "fogend 3000", "time 6.9", "colorshifttop 100 50 0", "colorshiftbottom 0 0 0"}
 }
 
-local blacklist = {"Raysdamain"}
+local blacklist = {"Fonalc"}
 local whitelist = {"raldreddd", "t_echr", "IceStuds"}
 
 local cmds = {
@@ -48,6 +48,7 @@ local cmds = {
 "laser plr amt delay(opt)",
 "setgplr -- Sets a target",
 "kick plr--hatkick",
+"Prison -- no explanations!"
 "bl2 player -- this doesnt unbl, cuz this custom bl also hatkicks the player.",
 "crash2 --this will crash the server, but in a funny way"
 "Hotify -- make bros device cooked! --Thanks to Dredlar",
@@ -119,13 +120,12 @@ for plri, plr in pairs(getplrs) do
           lp:Kick("You have been kicked by Owner of Solarity.")
         end
       end
-
+      
       if cmd == "Trapspawn" then
-      moveObject(game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump9,CFrame.new(-41.0650024, 1.30000007, -28.601058959961, 0, 0, -1, 0, 1, 0, 1, 0, 0))
+moveObject(game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump9,CFrame.new(-41.0650024, 1.30000007, -28.601058959961, 0, 0, -1, 0, 1, 0, 1, 0, 0))
     end
 
-    if string.sub(msg:lower(), 1, #prefix + 6) == 'prison' then
-                    moveObject(game:GetService("Workspace").Terrain["_Game"].Workspace["Basic House"].SmoothBlockModel40,CFrame.new(-10.7921638, 17.3182983, -16.0743637, -0.999961913, -0.0085983118, 0.00151610479, -1.01120179e-08, 0.173648253, 0.98480773, -0.00873095356, 0.984770179, -0.173641637))
+if cmd == "Prison" then  moveObject(game:GetService("Workspace").Terrain["_Game"].Workspace["Basic House"].SmoothBlockModel40,CFrame.new(-10.7921638, 17.3182983, -16.0743637, -0.999961913, -0.0085983118, 0.00151610479, -1.01120179e-08, 0.173648253, 0.98480773, -0.00873095356, 0.984770179, -0.173641637))
     end
 end
 
