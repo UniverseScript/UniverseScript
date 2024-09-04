@@ -1,5 +1,7 @@
 -- NOTE : i love you
 
+wait(1)
+
 xowner = "masterplayerguy1234" or "MarkDwayne_Pro"
 
 local antikill = true
