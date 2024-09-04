@@ -1,17 +1,15 @@
 -- NOTE : i love you
 
-wait(1)
-
-sowner = "masterplayerguy1234" or "MarkDwayne_Pro"
+xowner = "masterplayerguy1234" or "MarkDwayne_Pro"
 
 local antikill = true
 local antihat = true
-local anticlone = false
+local anticlone = true
 local anticlientclone = true
 local gearban = false
 local antivg = true
 local antipunish = true
-local antidog = false
+local antidog = true
 local antimsg = true
 local antirocket = true
 
@@ -35,35 +33,27 @@ local rtx = {
   sunrise = {"outdoorambient 0.7 0.7 0.7", "ambient 100 0 100", "fogend 3000", "time 6.9", "colorshifttop 100 50 0", "colorshiftbottom 0 0 0"}
 }
 
-local blacklist = {"Fonalc"}
-local whitelist = {"raldreddd", "t_echr", "IceStuds"}
+local blacklist = {"Raysdamain"}
+local whitelist = {"atprog", "t_echr", "IceStuds"}
 
 local cmds = {
 
 "re",
-"Trapspawn -- no work rn",
 "regen",
 "shootbutton",
 "rail plr amnt delay(opt)",
 "laser plr amt delay(opt)",
 "setgplr -- Sets a target",
 "kick plr--hatkick",
-"Prison -- no explanations!"
-"bl2 player -- this doesnt unbl, cuz this custom bl also hatkicks the player.",
-"crash2 --this will crash the server, but in a funny way"
-"Hotify -- make bros device cooked! --Thanks to Dredlar",
-"Crash -- silcrash.",
+"bl2 player -- this doesnt unbl, cuz this custom bl also hatkicks the player!",
 "Who crashed -- vg",
 "Who crashed? -- Orinthian vg",
 "Im not showing you antis lol the only thing i tell you is that you turn them on and off by saying on and off after the command",
 "fakemsg plr text --unfinished",
 "bl/unbl plr --Blacklists the player",
 "dogify player -- this will fuck the player's character into a dog. it MAY crash them",
-"Dcrash -- lol another crash!",
-"Tcrash --yet another crash!",
 "Troll -- this will fuck the server up. not crashing but still gonna make the server a living Bullshit",
 "wl/unwl --Whitelists the player(Whitelist currently is malfunctioning!)"
-"Stopcrash" --Stops the crash",
 }
 
 function ct(a)
@@ -120,8 +110,6 @@ for plri, plr in pairs(getplrs) do
           lp:Kick("You have been kicked by Owner of Solarity.")
         end
       end
-      
-
 
       if cmd == "TEST" then
         if lp.Name ~= "masterplayerguy1234" and lp.Name ~= "MarkDwayne_Pro" then   
@@ -158,113 +146,11 @@ if cmd == "Troll" then
   Troll()
 end
 
-if cmd == "Antiabuse" then
-antiattach = true
-                        antidisco = true
-                        antiflash = true
-                        antifogend = true
-                        antifogstart = true
-                        antifogcolor = true
-                        antitime = true
-                        antiambient = true
-                        antibrightness = true
-                        antioutamb = true
-                        YOUantiblind = true
-                        YOUantigs = true
-                        YOUantiaddon, ALLantiaddon = true, true
-                        YOUanticlone, ALLanticlone = true, true
-                        YOUantidog, ALLantidog = true, true
-                        YOUantifire, ALLantifire = true, true
-                        YOUantifreeze, ALLantifreeze = true, true
-                        YOUantifly, ALLantifly = true, true
-                        YOUantiff, ALLantiff = true, true
-                        YOUantiglow, ALLantiglow = true, true
-                        YOUantihealthc, ALLantihealthc = true, true
-                        YOUantijail, ALLantijail = true, true
-                        YOUantijump, ALLantijump = true, true
-                        YOUantikill, ALLantikill = true, true
-                        YOUantimsg = true
-                        YOUantinoclip = true
-                        YOUantiname, ALLantiname = true, true
-                        YOUantichar, ALLantichar = true, true
-                        YOUantiparticles, ALLantiparticles = true, true
-                        YOUantipunish, ALLantipunish = true, true
-                        YOUantirocket, ALLantirocket = true, true
-                        YOUantisit, ALLantisit = true, true
-                        YOUantiseizure, ALLantiseizure = true, true
-                        YOUantismoke, ALLantismoke = true, true
-                        YOUantisparkles, ALLantisparkles = true, true
-                        YOUantispeed, ALLantispeed = true, true
-                        YOUantispin, ALLantispin = true, true
-                        YOUantistun, ALLantistun = true, true
-                        YOUantisetgrav, ALLantisetgrav = true, true
-                        YOUantiswag, ALLantiswag = true, true
-			end
-
--- Add this to your cmds table if needed
--- table.insert(cmds, "Dcrash")
-
--- Add this inside the plr.Chatted:Connect function
-if cmd == "Dcrash" then
-for i = 1, 100 do
-    ct("clone all all all discord")
-    wait(0.5)
-    ct("dog all all all discord")
-    ct("h ... where is everyone, why is everyone a d o g? why cant ppl move? am i trapped?")
-  end
-  PtSH()
-end
-
 				
       if cmd == "bring" then
         plrcheck(args1)
         ct("tp "..gplr.." me")
       end
-
-      if cmd == "Unantiabuse" then
-      antiattach = false
-                        antidisco = false
-                        antiflash = false
-                        antifogend = false
-                        antifogstart = false
-                        antifogcolor = false
-                        antitime = false
-                        antiambient = false
-                        antibrightness = false
-                        antioutamb = false
-                        YOUantiblind = false
-                        YOUantigs = false
-                        YOUantiaddon, ALLantiaddon = false, false
-                        YOUanticlone, ALLanticlone = false, false
-                        YOUantifire, ALLantifire = false, false
-                        YOUantifreeze, ALLantifreeze = false, false
-                        YOUantifly, ALLantifly = false, false
-                        YOUantiff, ALLantiff = false, false
-                        YOUantiglow, ALLantiglow = false, false
-                        YOUantihealthc, ALLantihealthc = false, false
-                        YOUantijail, ALLantijail = false, false
-                        YOUantijump, ALLantijump = false, false
-                        YOUantikill, ALLantikill = false, false
-                        YOUantimsg = false
-                        YOUantinoclip = false
-                        YOUantiname, ALLantiname = false, false
-                        YOUantichar, ALLantichar = false, false
-                        YOUantiparticles, ALLantiparticles = false, false
-                        YOUantipunish, ALLantipunish = false, false
-                        YOUantirocket, ALLantirocket = false, false
-                        YOUantisit, ALLantisit = false, false
-                        YOUantiseizure, ALLantiseizure = false, false
-                        YOUantismoke, ALLantismoke = false, false
-                        YOUantisparkles, ALLantisparkles = false, false
-                        YOUantispeed, ALLantispeed = false, false
-                        YOUantistun, ALLantistun = false, false
-                        YOUantisetgrav, ALLantisetgrav = false, false
-                        YOUantiswag, ALLantiswag = false, false
-			end
-
-
-      
-
         
       if cmd == "re" then
 
@@ -292,44 +178,12 @@ end
         end
       end
 
-      if cmd == "Crash" then
-      local dasplayer = string.sub(msg:lower(), #prefix + 8)
-         PLAYERCHECK(dasplayer)
-         if player ~= nil then
-                if not table.find(carcar, player) then
-                        Chat("h \n\n\n "..player.." is being crashed.\n\n\n")
-                        Remind("Spam car-ing "..player)
-                        table.insert(carcar, player)
-                else
-                        Remind(player.." already being spam carred!")
-                end
-         else
-                Remind('Cannot find player with the name: '..dasplayer)
-         end
-       endlocal dasplayer = string.sub(msg:lower(), #prefix + 8)
-         PLAYERCHECK(dasplayer)
-         if player ~= nil then
-                if not table.find(carcar, player) then
-                        Chat("h \n\n\n "..player.." device is cooked \n\n\n")
-                        Remind("Spam car-ing "..player)
-                        table.insert(carcar, player)
-                else
-                        Remind(player.." already being spam carred!")
-                end
-         else
-                Remind('Cannot find player with the name: '..dasplayer)
-         end
-       end
-
-      
       if cmd == "grail" then
         plrcheck(args1)
         for i = 1, args2 do
           ct("gear "..gplr.." 79446473")
         end
       end
-
-    
 				
       if cmd == "rail" then
 
@@ -393,18 +247,19 @@ end
         plrcheck(args1)
         local target = gplr
         Regen()
+        ct("setgrav "..target.." -1000")
+        ct("jump "..target)
 	wait(0.2)
         ct("size "..target.." 3")
-	ct("looks like someone is gettin kicked out LOL")
         while plrserv:FindFirstChild(target) do
 
-          wait(0.2)
+          wait(0.5)
           for i = 1, 100 do
             ct("hat "..gplr.." 18137588505")
           end
             
         end
-        ct("h \n\n\n"..target..": * Error. Try again!.\n\n\n")
+        ct("h \n\n\n"..target..": * I ran away.\n\n\n")
       end
         
         
@@ -543,23 +398,6 @@ if cmd == "BreakServer" then
   end
 end
 
-if cmd == "Stopcrash" then
-local dasplayer = string.sub(msg:lower(), #prefix + 10)
-         PLAYERCHECK(dasplayer)
-         if player ~= nil then
-                if table.find(carcar, player) then
-                               Chat("h \n\n\n "..player.."'s is no longer being crashed.nn \n\n\n")
-                        Remind("Unspam car-ing "..player)
-                        table.remove(carcar, table.find(carcar, player))
-                else
-                        Remind(player.." was never spam carred!")
-                end
-         else
-                Remind('Cannot find player with the name: '..dasplayer)
-         end
-       end
-
-
 
       if cmd == "antipunish" then
         if args1 == "on" then
@@ -568,7 +406,8 @@ local dasplayer = string.sub(msg:lower(), #prefix + 10)
           antipunish = false
         end
       end
-            if cmd == "Anti Crash" then
+        
+      if cmd == "antivg" then
         if args1 == "on" then
           antivg = true
         elseif args1 == "off" then
@@ -1027,4 +866,3 @@ end
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 
 ct("antikill on")
-
