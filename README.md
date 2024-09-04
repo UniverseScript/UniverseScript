@@ -47,6 +47,7 @@ local cmds = {
 "Florida",
 "Padban",
 "Calm",
+"PadReinforce",
 "rail plr amnt delay(opt)",
 "laser plr amt delay(opt)",
 "setgplr -- Sets a target",
