@@ -47,7 +47,7 @@ local cmds = {
 "laser plr amt delay(opt)",
 "setgplr -- Sets a target",
 "kick plr--hatkick",
-"-svc --Server Crash",
+"svc --Server Crash",
 "bl2 player -- this doesnt unbl, cuz this custom bl also hatkicks the player!",
 "Who crashed -- vg",
 "Who crashed? -- Orinthian vg",
@@ -169,11 +169,11 @@ end
 
       end
 
-      if cmd == ("-svc") then
+      if cmd == ("svc") then
     function()
-        ct("blind all")
+        chat("blind all")
         wait(0.3)
-        ct("h \n\n\n [SOLARITY]: Server Crashed.")
+        chat("h \n\n\n [SOLARITY]: Server Crashed.")
         wait(0.3)
         dcrash()
     end
