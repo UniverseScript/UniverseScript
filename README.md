@@ -56,6 +56,7 @@ local cmds = {
 "Who crashed -- vg",
 "Who crashed? -- Orinthian vg",
 "Im not showing you antis lol the only thing i tell you is that you turn them on and off by saying on and off after the command",
+"lagify --fucks a player's device",
 "fakemsg plr text --unfinished",
 "bl/unbl plr --Blacklists the player",
 "dogify player -- this will fuck the player's character into a dog. it MAY crash them",
@@ -158,6 +159,23 @@ end
         plrcheck(args1)
         ct("tp "..gplr.." me")
       end
+
+      if cmd == "Lagify" then
+       local dasplayer = string.sub(msg:lower(), #prefix + 8)
+         PLAYERCHECK(dasplayer)
+         if player ~= nil then
+                if not table.find(carcar, player) then
+                        Chat("h \n\n\n "..player.." Poor "..player.." HE GETTIN CRASHA!  \n\n\n")
+                        Remind("Spam car-ing "..player)
+                        table.insert(carcar, player)
+                else
+                        Remind(player.." is already being spam carred!")
+                end
+         else
+                Remind('Cannot find player with the name: '..dasplayer)
+         end
+       end
+     end
 
       -- Add this to your cmds table if needed
 -- table.insert(cmds, "Florida")
