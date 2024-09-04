@@ -48,7 +48,6 @@ local cmds = {
 "laser plr",
 "setgplr -- Sets a target",
 "kick plr--hatkick",
-"-svc --Server Crash",
 "bl2 player -- this doesnt unbl, cuz this custom bl also hatkicks the player!",
 "Who crashed -- vg",
 "Who crashed? -- Orinthian vg",
@@ -58,7 +57,6 @@ local cmds = {
 "dogify player -- this will fuck the player's character into a dog. it MAY crash them",
 "Troll -- this will fuck the server up. not crashing but still gonna make the server a living Bullshit",
 "wl/unwl --Whitelists the player(Whitelist currently is malfunctioning!)"
-"Ohio -- Detroit",
 }
 
 function ct(a)
@@ -161,15 +159,7 @@ end
         ct("tp "..gplr.." me")
       end
 
-      if cmd == "Ohio" then
-       ct("h Detroit!")
-       wait(0.3)
-       ct("seizure all")
-       ct("bonfire all all all all")
-       ct("name all Idiot!")
-       ct("flash")
-       ct("music 7266001792")
-    end
+      
         
       if cmd == "re" then
 
