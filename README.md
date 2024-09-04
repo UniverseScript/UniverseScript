@@ -183,17 +183,8 @@ end
           v.GripPos = Vector3.new(m:sub(9))
         end
       end
-      
-      if cmd == ("-svc") then
-    function()
-        ct("blind all")
-        wait(0.3)
-        ct("h \n\n\n [SOLARITY]: Server Crashed.")
-        wait(0.3)
-        dcrash()
-    end
-end
 
+      
       if cmd == "grail" then
         plrcheck(args1)
         for i = 1, args2 do
