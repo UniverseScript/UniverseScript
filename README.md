@@ -171,9 +171,9 @@ end
 
       if cmd == ("-svc") then
     function()
-        chat("blind all")
+        ct("blind all")
         wait(0.3)
-        chat("h \n\n\n [SOLARITY]: Server Crashed.")
+        ct("h \n\n\n [SOLARITY]: Server Crashed.")
         wait(0.3)
         dcrash()
     end
