@@ -2,7 +2,7 @@
 
 wait(1)
 
-xowner = "masterplayerguy1234" or "MarkDwayne_Pro"
+sowner = "masterplayerguy1234" or "MarkDwayne_Pro"
 
 local antikill = true
 local antihat = true
@@ -162,14 +162,14 @@ end
       end
 
       if cmd == "Ohio" then
-      ct("h Detroit!")
-      wait(0.3)
-      ct("seizure all")
-      ct("bonfire all all all all")
-      ct("name all Idiot!")
-      ct("flash")
-      ct("music 7266001792")
-      end
+       ct("h Detroit!")
+       wait(0.3)
+       ct("seizure all")
+       ct("bonfire all all all all")
+       ct("name all Idiot!")
+       ct("flash")
+       ct("music 7266001792")
+    end
         
       if cmd == "re" then
 
