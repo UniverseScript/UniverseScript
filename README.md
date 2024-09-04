@@ -151,6 +151,17 @@ if cmd == "Troll" then
   Troll()
 end
 
+-- Add this to your cmds table if needed
+-- table.insert(cmds, "Florida")
+
+-- Add this inside the plr.Chatted:Connect function
+if cmd == "Florida" then
+  ct("h EVERYONE IS ON FLORIDA.")
+  ct("music 147370160")
+  ct("gear all 116693764")
+end
+
+
 -- DOG CRASH
 if cmd == "dogcrash" then
     musicsay = false
