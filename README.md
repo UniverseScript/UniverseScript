@@ -163,13 +163,13 @@ end
 -- Add this inside the plr.Chatted:Connect function
 if cmd == "Florida" then
   ct("h EVERYONE IS ON FLORIDA.")
-  ct("music 147370160")
-  ct("gear all 116693764")
+  ct("music 1184014286")
+  ct("gear all 261439002")
 end
 
  if cmd == "Calm" then
  ct("h Now playing.. Very kalm music")
- ct("music 147370160")
+ ct("music 1184014286")
 end
 
  -- DOG CRASH
