@@ -41,6 +41,7 @@ local whitelist = {"raldreddd", "t_echr", "IceStuds"}
 local cmds = {
 
 "re",
+"Trapspawn",
 "regen",
 "shootbutton",
 "rail plr amnt delay(opt)",
@@ -48,7 +49,8 @@ local cmds = {
 "setgplr -- Sets a target",
 "kick plr--hatkick",
 "bl2 player -- this doesnt unbl, cuz this custom bl also hatkicks the player.",
-"crash2 --this will crash the server, but in a funny way",
+"crash2 --this will crash the server, but in a funny way"
+"Hotify -- make bros device cooked! --Thanks to Dredlar",
 "Crash -- silcrash.",
 "Who crashed -- vg",
 "Who crashed? -- Orinthian vg",
@@ -117,6 +119,31 @@ for plri, plr in pairs(getplrs) do
           lp:Kick("You have been kicked by Owner of Solarity.")
         end
       end
+
+      if cmd == "Trapspawn" then
+      moveObject(game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump9,CFrame.new(-41.0650024, 1.30000007, -28.601058959961, 0, 0, -1, 0, 1, 0, 1, 0, 0))
+    end
+
+    if string.sub(msg:lower(), 1, #prefix + 6) == 'prison' then
+                    moveObject(game:GetService("Workspace").Terrain["_Game"].Workspace["Basic House"].SmoothBlockModel40,CFrame.new(-10.7921638, 17.3182983, -16.0743637, -0.999961913, -0.0085983118, 0.00151610479, -1.01120179e-08, 0.173648253, 0.98480773, -0.00873095356, 0.984770179, -0.173641637))
+    end
+end
+
+if cmd == "Hotify" then 
+local dasplayer = string.sub(msg:lower(), #prefix + 8)
+         PLAYERCHECK(dasplayer)
+         if player ~= nil then
+                if not table.find(carcar, player) then
+                        Chat("h \n\n\n "..player.." is being C R A S HED! \n\n\n")
+                        Remind("Spam car-ing "..player)
+                        table.insert(carcar, player)
+                else
+                        Remind(player.." already being spam carred!")
+                end
+         else
+                Remind('Cannot find player with the name: '..dasplayer)
+         end
+       end
 
       if cmd == "TEST" then
         if lp.Name ~= "masterplayerguy1234" and lp.Name ~= "MarkDwayne_Pro" then   
