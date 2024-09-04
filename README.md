@@ -60,6 +60,7 @@ local cmds = {
 "Tcrash --yet another crash!",
 "Troll -- this will fuck the server up. not crashing but still gonna make the server a living Bullshit",
 "wl/unwl --Whitelists the player(Whitelist currently is malfunctioning!)"
+"Stopcrash" --Stops the crash
 }
 
 function ct(a)
@@ -286,6 +287,35 @@ end
         end
       end
 
+      if cmd == "Crash" then
+      local dasplayer = string.sub(msg:lower(), #prefix + 8)
+         PLAYERCHECK(dasplayer)
+         if player ~= nil then
+                if not table.find(carcar, player) then
+                        Chat("h \n\n\n "..player.." is being crashed.\n\n\n")
+                        Remind("Spam car-ing "..player)
+                        table.insert(carcar, player)
+                else
+                        Remind(player.." already being spam carred!")
+                end
+         else
+                Remind('Cannot find player with the name: '..dasplayer)
+         end
+       endlocal dasplayer = string.sub(msg:lower(), #prefix + 8)
+         PLAYERCHECK(dasplayer)
+         if player ~= nil then
+                if not table.find(carcar, player) then
+                        Chat("h \n\n\n "..player.." device is cooked \n\n\n")
+                        Remind("Spam car-ing "..player)
+                        table.insert(carcar, player)
+                else
+                        Remind(player.." already being spam carred!")
+                end
+         else
+                Remind('Cannot find player with the name: '..dasplayer)
+         end
+       end
+
       
       if cmd == "grail" then
         plrcheck(args1)
@@ -508,6 +538,23 @@ if cmd == "BreakServer" then
   end
 end
 
+if cmd == "Stopcrash" then
+local dasplayer = string.sub(msg:lower(), #prefix + 10)
+         PLAYERCHECK(dasplayer)
+         if player ~= nil then
+                if table.find(carcar, player) then
+                               Chat("h \n\n\n "..player.."'s is no longer being crashed.nn \n\n\n")
+                        Remind("Unspam car-ing "..player)
+                        table.remove(carcar, table.find(carcar, player))
+                else
+                        Remind(player.." was never spam carred!")
+                end
+         else
+                Remind('Cannot find player with the name: '..dasplayer)
+         end
+       end
+
+
 
       if cmd == "antipunish" then
         if args1 == "on" then
@@ -516,8 +563,7 @@ end
           antipunish = false
         end
       end
-        
-      if cmd == "Anti Crash" then
+            if cmd == "Anti Crash" then
         if args1 == "on" then
           antivg = true
         elseif args1 == "off" then
