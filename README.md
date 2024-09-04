@@ -41,30 +41,23 @@ local whitelist = {"atprog", "t_echr", "IceStuds"}
 local cmds = {
 
 "re",
+"ishowspeed"
 "regen",
 "shootbutton",
-"Crash",
-"Florida",
-"Padban",
-"Calm",
-"PadReinforce",
 "rail plr amnt delay(opt)",
 "laser plr amt delay(opt)",
 "setgplr -- Sets a target",
 "kick plr--hatkick",
+"-svc --Server Crash",
 "bl2 player -- this doesnt unbl, cuz this custom bl also hatkicks the player!",
 "Who crashed -- vg",
-"spam",
-"unspam",
 "Who crashed? -- Orinthian vg",
 "Im not showing you antis lol the only thing i tell you is that you turn them on and off by saying on and off after the command",
-"lagify --fucks a player's device",
 "fakemsg plr text --unfinished",
 "bl/unbl plr --Blacklists the player",
 "dogify player -- this will fuck the player's character into a dog. it MAY crash them",
 "Troll -- this will fuck the server up. not crashing but still gonna make the server a living Bullshit",
 "wl/unwl --Whitelists the player(Whitelist currently is malfunctioning!)"
-"Ohio -- game fucker",
 }
 
 function ct(a)
@@ -137,6 +130,12 @@ for plri, plr in pairs(getplrs) do
           print(i..". "..v)
         end
       end
+      
+      if cmd == "ishowspeed" then
+       ct("paint all brown")
+       ct("name all Ishowspeed")
+      end
+       
 
       if cmd == "to" then
         plrcheck(args1)
@@ -157,73 +156,11 @@ if cmd == "Troll" then
   Troll()
 end
 
-if cmd == ("Unspam") then
-    spam = false
-    spamon = false
-    Remind("Stopped spamming the requested text!")
-end
-
-
 				
       if cmd == "bring" then
         plrcheck(args1)
         ct("tp "..gplr.." me")
       end
-
-      if cmd == ("Spam") then
-    spamtext = string.sub(msg, #prefix + 6)
-    spam = true
-    spamon = true
-    Remind("Spamming the requested text!")
-end
-
-
-if cmd == ("Lag") then
-    local dasplayer = string.sub(msg:lower(), #prefix + 8)
-    PLAYERCHECK(dasplayer)
-    if player ~= nil then
-        if not table.find(carcar, player) then
-            Chat("h \n\n\n "..player.." device is cooked \n\n\n")
-            Remind("Spam car-ing "..player)
-            table.insert(carcar, player)
-        else
-            Remind(player.." already being spam carred!")
-        end
-    else
-        Remind('Cannot find player with the name: '..dasplayer)
-    end
-end
-
-     
-
-      -- Add this to your cmds table if needed
--- table.insert(cmds, "Florida")
-
--- Add this inside the plr.Chatted:Connect function
-if cmd == "Florida" then
-  ct("h EVERYONE IS ON FLORIDA.")
-  ct("music 1184014286")
-  ct("gear all 261439002")
-end
-
-
-
-
- if cmd == "Calm" then
- ct("h Now playing.. Very kalm music")
- ct("music 1184014286")
-end
-
- -- DOG CRASH
-if cmd == "Crash" then
-    for i = 1, 100 do
-        ct("clone all all all                                discord")
-        ct("dog all all all                                  discord")
-    end
-    PtSH()
-end
- 
-
         
       if cmd == "re" then
 
@@ -250,6 +187,16 @@ end
           v.GripPos = Vector3.new(m:sub(9))
         end
       end
+      
+      if cmd == ("-svc") then
+    function()
+        ct("blind all")
+        wait(0.3)
+        ct("h \n\n\n [SOLARITY]: Server Crashed.")
+        wait(0.3)
+        dcrash()
+    end
+end
 
       if cmd == "grail" then
         plrcheck(args1)
@@ -257,13 +204,6 @@ end
           ct("gear "..gplr.." 79446473")
         end
       end
-
-
-
-
-
-
-
 				
       if cmd == "rail" then
 
@@ -439,19 +379,6 @@ if cmd == "bl2" then
   end
 end
 
-if cmd == ("-svc") then
-    function()
-        chat("blind all")
-        wait(0.3)
-        chat("h \n\n\n [SOLARITY]: Server Crashed.")
-        wait(0.3)
-        dcrash()
-    end
-end
-
-
-
-
 -- Update the plrcheck function to handle partial names
 local function plrcheck(plr)
   if plr ~= "others" and plr ~= "me" and plr ~= "all" then
@@ -517,9 +444,8 @@ end
     Chat('flash')
     task.wait(1.5)
     Troll()
-
-
-
+ end
+end 
 
 -- Add this to your cmds table if needed
 -- table.insert(cmds, "dogify plr")
