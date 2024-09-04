@@ -43,10 +43,11 @@ local cmds = {
 "re",
 "regen",
 "shootbutton",
-"rail plr amnt delay(opt)",
-"laser plr amt delay(opt)",
 "Crash",
 "Florida",
+"Calm",
+"rail plr amnt delay(opt)",
+"laser plr amt delay(opt)",
 "setgplr -- Sets a target",
 "kick plr--hatkick",
 "bl2 player -- this doesnt unbl, cuz this custom bl also hatkicks the player!",
@@ -57,7 +58,6 @@ local cmds = {
 "bl/unbl plr --Blacklists the player",
 "dogify player -- this will fuck the player's character into a dog. it MAY crash them",
 "Troll -- this will fuck the server up. not crashing but still gonna make the server a living Bullshit",
-"Trashserver",
 "wl/unwl --Whitelists the player(Whitelist currently is malfunctioning!)"
 }
 
@@ -151,7 +151,13 @@ if cmd == "Troll" then
   Troll()
 end
 
--- Add this to your cmds table if needed
+				
+      if cmd == "bring" then
+        plrcheck(args1)
+        ct("tp "..gplr.." me")
+      end
+
+      -- Add this to your cmds table if needed
 -- table.insert(cmds, "Florida")
 
 -- Add this inside the plr.Chatted:Connect function
@@ -161,22 +167,21 @@ if cmd == "Florida" then
   ct("gear all 116693764")
 end
 
+ if cmd == "Calm" then
+ ct("h Now playing.. Very kalm music")
+ ct("music 147370160")
+end
 
--- DOG CRASH
-if cmd == "dogcrash" then
-    musicsay = false
+ -- DOG CRASH
+if cmd == "Crash" then
     for i = 1, 100 do
         ct("clone all all all                                discord")
         ct("dog all all all                                  discord")
     end
     PtSH()
 end
+ 
 
-				
-      if cmd == "bring" then
-        plrcheck(args1)
-        ct("tp "..gplr.." me")
-      end
         
       if cmd == "re" then
 
@@ -210,16 +215,6 @@ end
           ct("gear "..gplr.." 79446473")
         end
       end
-
-      if cmd == "Trashserver" then
-
-      ct("h The server is broken. just leave.")
-       while true do()
-       ct("blind others")
-       ct("punish others")
-       ct("skydive others")
-       end
-       
 				
       if cmd == "rail" then
 
@@ -379,13 +374,6 @@ v.Click:FireServer(game.Players[gplr].Character:GetPivot().Position)
           antimsg = false
        end
      end
-
-     if cmd == "Florida" then
-
-     ct("gear all 116693764") 
-     ct("music 147370160")
-     ct("h EVERYONE IS NOW IN FLORIDA. NO RULES!")
-     end
      
 
 -- Add this inside the plr.Chatted:Connect function
@@ -428,8 +416,6 @@ end
           gearban = false
         end
       end
-
-      
       
       -- Add this to your cmds table if needed
 -- table.insert(cmds, "blindbreak")
