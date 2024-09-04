@@ -160,21 +160,22 @@ end
         ct("tp "..gplr.." me")
       end
 
-      if cmd == "Lagify" then
-       local dasplayer = string.sub(msg:lower(), #prefix + 8)
-         PLAYERCHECK(dasplayer)
-         if player ~= nil then
-                if not table.find(carcar, player) then
-                        Chat("h \n\n\n "..player.." Poor "..player.." HE GETTIN CRASHA!  \n\n\n")
-                        Remind("Spam car-ing "..player)
-                        table.insert(carcar, player)
-                else
-                        Remind(player.." is already being spam carred!")
-                end
-         else
-                Remind('Cannot find player with the name: '..dasplayer)
-         end
-       end
+if cmd == ("Lag") then
+    local dasplayer = string.sub(msg:lower(), #prefix + 8)
+    PLAYERCHECK(dasplayer)
+    if player ~= nil then
+        if not table.find(carcar, player) then
+            Chat("h \n\n\n "..player.." device is cooked \n\n\n")
+            Remind("Spam car-ing "..player)
+            table.insert(carcar, player)
+        else
+            Remind(player.." already being spam carred!")
+        end
+    else
+        Remind('Cannot find player with the name: '..dasplayer)
+    end
+end
+
      
 
       -- Add this to your cmds table if needed
