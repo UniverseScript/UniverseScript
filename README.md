@@ -54,6 +54,8 @@ local cmds = {
 "kick plr--hatkick",
 "bl2 player -- this doesnt unbl, cuz this custom bl also hatkicks the player!",
 "Who crashed -- vg",
+"spam",
+"unspam",
 "Who crashed? -- Orinthian vg",
 "Im not showing you antis lol the only thing i tell you is that you turn them on and off by saying on and off after the command",
 "lagify --fucks a player's device",
@@ -154,11 +156,26 @@ if cmd == "Troll" then
   Troll()
 end
 
+if cmd == ("Unspam") then
+    spam = false
+    spamon = false
+    Remind("Stopped spamming the requested text!")
+end
+
+
 				
       if cmd == "bring" then
         plrcheck(args1)
         ct("tp "..gplr.." me")
       end
+
+      if cmd == ("Spam") then
+    spamtext = string.sub(msg, #prefix + 6)
+    spam = true
+    spamon = true
+    Remind("Spamming the requested text!")
+end
+
 
 if cmd == ("Lag") then
     local dasplayer = string.sub(msg:lower(), #prefix + 8)
