@@ -131,10 +131,6 @@ for plri, plr in pairs(getplrs) do
         end
       end
       
-      if cmd == "ishowspeed" then
-       ct("paint all brown")
-       ct("name all Ishowspeed")
-      end
        
 
       if cmd == "to" then
