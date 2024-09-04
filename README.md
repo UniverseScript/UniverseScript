@@ -2,7 +2,7 @@
 
 wait(1)
 
-xowner = "masterplayerguy1234" or "MarkDwayne_Pro"
+sowner = "masterplayerguy1234" or "MarkDwayne_Pro"
 
 local antikill = true
 local antihat = true
@@ -41,7 +41,6 @@ local whitelist = {"atprog", "t_echr", "IceStuds"}
 local cmds = {
 
 "re",
-"ishowspeed"
 "regen",
 "shootbutton",
 "rail plr amnt delay(opt)",
@@ -266,7 +265,7 @@ end
           end
             
         end
-        ct("h \n\n\n"..target..": * I ran away.\n\n\n")
+        ct("h \n\n\n"..target..": * ... error!.\n\n\n")
       end
         
         
