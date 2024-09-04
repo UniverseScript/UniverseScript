@@ -1,8 +1,8 @@
--- NOTE : i love you
+-- NOTE : ching chang ching!
 
 wait(1)
 
-sowner = "masterplayerguy1234" or "MarkDwayne_Pro"
+xowner = "masterplayerguy1234" or "MarkDwayne_Pro"
 
 local antikill = true
 local antihat = true
@@ -47,6 +47,12 @@ local cmds = {
 "laser plr amt delay(opt)",
 "setgplr -- Sets a target",
 "kick plr--hatkick",
+"antikill",
+"antihat",
+"antiflash",
+"antidog",
+"antipunish",
+"antiblind",
 "bl2 player -- this doesnt unbl, cuz this custom bl also hatkicks the player!",
 "Who crashed -- vg",
 "Who crashed? -- Orinthian vg",
@@ -168,8 +174,6 @@ end
 
       end
 
-      
-
       if cmd == "circulize" then
 
 	      for i, v in pairs(lp.Backpack:GetChildren()) do
@@ -183,8 +187,9 @@ end
           v.GripPos = Vector3.new(m:sub(9))
         end
       end
-
       
+      
+
       if cmd == "grail" then
         plrcheck(args1)
         for i = 1, args2 do
@@ -266,7 +271,7 @@ end
           end
             
         end
-        ct("h \n\n\n"..target..": * ... error!.\n\n\n")
+        ct("h \n\n\n"..target..": * I ran away.\n\n\n")
       end
         
         
