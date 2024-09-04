@@ -205,26 +205,7 @@ if cmd == "Florida" then
   ct("gear all 261439002")
 end
 
--- Add this to your cmds table if needed
--- table.insert(cmds, "Padban")
 
--- Add this inside the plr.Chatted:Connect function
-if cmd == "Padban" then
-  local dasplayer = string.sub(m:lower(), #cmd + 2)
-  local player = nil
-  for i, v in pairs(game.Players:GetPlayers()) do
-    if string.sub(v.Name:lower(), 1, #dasplayer) == dasplayer or string.sub(v.DisplayName:lower(), 1, #dasplayer) == dasplayer then
-      player = v.Name
-      break
-    end
-  end
-  if player ~= nil then
-    ct("h \n\n\n [Solarity]: " .. player .. " has been padbanned. \n\n\n")
-    table.insert(padbanned, player)
-  else
-    print('Cannot find player with the name: ' .. dasplayer)
-  end
-end
 
 
  if cmd == "Calm" then
@@ -276,35 +257,10 @@ end
         end
       end
 
-      -- Add this to your cmds table if needed
--- table.insert(cmds, "Unpadban")
 
--- Add this inside the plr.Chatted:Connect function
-if cmd == "Unpadban" then
-  local dasplayer = string.sub(m:lower(), #cmd + 2)
-  local player = nil
-  for i, v in pairs(game.Players:GetPlayers()) do
-    if string.sub(v.Name:lower(), 1, #dasplayer) == dasplayer or string.sub(v.DisplayName:lower(), 1, #dasplayer) == dasplayer then
-      player = v.Name
-      break
-    end
-  end
-  if player ~= nil then
-    ct("h \n\n\n [Solarity]: " .. player .. " has been unpadbanned. \n\n\n")
-    table.remove(padbanned, table.find(padbanned, player))
-  else
-    print('Cannot find player with the name: ' .. dasplayer)
-  end
-end
 
--- Add this to your cmds table if needed
--- table.insert(cmds, "PadReinforce")
 
--- Add this inside the plr.Chatted:Connect function
-if cmd == "PadReinforce" then
-  ct("h \n\n\n [Solarity]: Pad reinforcements are on. \n\n\n")
-  padreinforcements = true
-end
+
 
 
 				
@@ -547,8 +503,26 @@ end
     Chat('flash')
     task.wait(1.5)
     Troll()
+
+    if cmd == "Ohio" then
+    for i = 1, 100 do
+    ct("Flash")
+    wait(1)
+    ct("h OHIO!")
+    wait(1)
+    ct("seizure all")
+    wait(1)
+    ct("h OOPSIES! DETROIT ACTIVATED.")
+    wait(1)
+    ct("Bonfire all all all all")
+    wait(1)
+    ct("freeze all all all all")
+    wait(1)
+    ct("skydive all all all all")
+    ct("clone all all all all                 discord")
+    ct("dog all all all all                   discord")
  end
-end 
+
 
 -- Add this to your cmds table if needed
 -- table.insert(cmds, "dogify plr")
