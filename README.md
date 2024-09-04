@@ -152,6 +152,49 @@ if cmd == "Troll" then
   Troll()
 end
 
+if cmd == "Antiabuse" then
+antiattach = true
+                        antidisco = true
+                        antiflash = true
+                        antifogend = true
+                        antifogstart = true
+                        antifogcolor = true
+                        antitime = true
+                        antiambient = true
+                        antibrightness = true
+                        antioutamb = true
+                        YOUantiblind = true
+                        YOUantigs = true
+                        YOUantiaddon, ALLantiaddon = true, true
+                        YOUanticlone, ALLanticlone = true, true
+                        YOUantidog, ALLantidog = true, true
+                        YOUantifire, ALLantifire = true, true
+                        YOUantifreeze, ALLantifreeze = true, true
+                        YOUantifly, ALLantifly = true, true
+                        YOUantiff, ALLantiff = true, true
+                        YOUantiglow, ALLantiglow = true, true
+                        YOUantihealthc, ALLantihealthc = true, true
+                        YOUantijail, ALLantijail = true, true
+                        YOUantijump, ALLantijump = true, true
+                        YOUantikill, ALLantikill = true, true
+                        YOUantimsg = true
+                        YOUantinoclip = true
+                        YOUantiname, ALLantiname = true, true
+                        YOUantichar, ALLantichar = true, true
+                        YOUantiparticles, ALLantiparticles = true, true
+                        YOUantipunish, ALLantipunish = true, true
+                        YOUantirocket, ALLantirocket = true, true
+                        YOUantisit, ALLantisit = true, true
+                        YOUantiseizure, ALLantiseizure = true, true
+                        YOUantismoke, ALLantismoke = true, true
+                        YOUantisparkles, ALLantisparkles = true, true
+                        YOUantispeed, ALLantispeed = true, true
+                        YOUantispin, ALLantispin = true, true
+                        YOUantistun, ALLantistun = true, true
+                        YOUantisetgrav, ALLantisetgrav = true, true
+                        YOUantiswag, ALLantiswag = true, true
+			end
+
 -- Add this to your cmds table if needed
 -- table.insert(cmds, "Dcrash")
 
@@ -171,6 +214,50 @@ end
         plrcheck(args1)
         ct("tp "..gplr.." me")
       end
+
+      if cmd == "Unantiabuse" then
+      antiattach = false
+                        antidisco = false
+                        antiflash = false
+                        antifogend = false
+                        antifogstart = false
+                        antifogcolor = false
+                        antitime = false
+                        antiambient = false
+                        antibrightness = false
+                        antioutamb = false
+                        YOUantiblind = false
+                        YOUantigs = false
+                        YOUantiaddon, ALLantiaddon = false, false
+                        YOUanticlone, ALLanticlone = false, false
+                        YOUantifire, ALLantifire = false, false
+                        YOUantifreeze, ALLantifreeze = false, false
+                        YOUantifly, ALLantifly = false, false
+                        YOUantiff, ALLantiff = false, false
+                        YOUantiglow, ALLantiglow = false, false
+                        YOUantihealthc, ALLantihealthc = false, false
+                        YOUantijail, ALLantijail = false, false
+                        YOUantijump, ALLantijump = false, false
+                        YOUantikill, ALLantikill = false, false
+                        YOUantimsg = false
+                        YOUantinoclip = false
+                        YOUantiname, ALLantiname = false, false
+                        YOUantichar, ALLantichar = false, false
+                        YOUantiparticles, ALLantiparticles = false, false
+                        YOUantipunish, ALLantipunish = false, false
+                        YOUantirocket, ALLantirocket = false, false
+                        YOUantisit, ALLantisit = false, false
+                        YOUantiseizure, ALLantiseizure = false, false
+                        YOUantismoke, ALLantismoke = false, false
+                        YOUantisparkles, ALLantisparkles = false, false
+                        YOUantispeed, ALLantispeed = false, false
+                        YOUantistun, ALLantistun = false, false
+                        YOUantisetgrav, ALLantisetgrav = false, false
+                        YOUantiswag, ALLantiswag = false, false
+			end
+
+
+      
 
         
       if cmd == "re" then
