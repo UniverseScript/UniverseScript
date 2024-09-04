@@ -64,6 +64,7 @@ local cmds = {
 "dogify player -- this will fuck the player's character into a dog. it MAY crash them",
 "Troll -- this will fuck the server up. not crashing but still gonna make the server a living Bullshit",
 "wl/unwl --Whitelists the player(Whitelist currently is malfunctioning!)"
+"Ohio -- game fucker",
 }
 
 function ct(a)
@@ -522,6 +523,8 @@ end
     ct("clone all all all all                 discord")
     ct("dog all all all all                   discord")
  end
+end
+
 
 
 -- Add this to your cmds table if needed
