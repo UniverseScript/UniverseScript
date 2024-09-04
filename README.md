@@ -2,7 +2,7 @@
 
 wait(1)
 
-xowner = "masterplayerguy1234" or "MarkDwayne_Pro"
+sowner = "masterplayerguy1234" or "MarkDwayne_Pro"
 
 local antikill = true
 local antihat = true
