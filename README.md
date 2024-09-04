@@ -35,17 +35,15 @@ local rtx = {
   sunrise = {"outdoorambient 0.7 0.7 0.7", "ambient 100 0 100", "fogend 3000", "time 6.9", "colorshifttop 100 50 0", "colorshiftbottom 0 0 0"}
 }
 
-local blacklist = {"Raysdamain"}
-local whitelist = {"atprog", "t_echr", "IceStuds"}
+local blacklist = {"a"}
+local whitelist = {"atprog"}
 
 local cmds = {
 
 "re",
 "regen",
 "shootbutton",
-"rail plr amnt delay(opt)",
-"laser plr amt delay(opt)",
-"setgplr -- Sets a target",
+
 "kick plr--hatkick",
 "antikill",
 "antihat",
@@ -54,10 +52,10 @@ local cmds = {
 "antipunish",
 "antiblind",
 "bl2 player -- this doesnt unbl, cuz this custom bl also hatkicks the player!",
-"Who crashed -- vg",
-"Who crashed? -- Orinthian vg",
-"Im not showing you antis lol the only thing i tell you is that you turn them on and off by saying on and off after the command",
-"fakemsg plr text --unfinished",
+"WC",
+"WCO",
+"idk",
+"fakemsg plr text --thanks to shift for the help
 "bl/unbl plr --Blacklists the player",
 "dogify player -- this will fuck the player's character into a dog. it MAY crash them",
 "Troll -- this will fuck the server up. not crashing but still gonna make the server a living Bullshit",
@@ -182,7 +180,7 @@ end
           v.GripPos = Vector3.new(math.cos(i) * a + 1.5, h, math.sin(i) * a - 1.5)
         end
       end
-      if cmd == "grippos" then
+      if cmd == "Grippa" then
         for i, v in pairs(lp.Backpack:GetChildren()) do
           v.GripPos = Vector3.new(m:sub(9))
         end
@@ -275,7 +273,7 @@ end
       end
         
         
-      if cmd == "shootbutton" then
+      if cmd == "Wgui" then
 
         local sg = Instance.new("ScreenGui")
         sg.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -283,7 +281,7 @@ end
         sb.Parent = sg
         sb.Size = UDim2.new(0, 50, 0, 50)
         sb.Position = UDim2.new(1, -200, 0, 200)
-        sb.Text = "C"
+        sb.Text = "Shoot(Weapon)"
         sb.Activated:Connect(function()
 
           ct("equipall")
