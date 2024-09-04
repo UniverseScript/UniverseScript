@@ -63,7 +63,7 @@ local cmds = {
 "Tcrash --yet another crash!",
 "Troll -- this will fuck the server up. not crashing but still gonna make the server a living Bullshit",
 "wl/unwl --Whitelists the player(Whitelist currently is malfunctioning!)"
-"Stopcrash" --Stops the crash
+"Stopcrash" --Stops the crash",
 }
 
 function ct(a)
@@ -123,6 +123,7 @@ for plri, plr in pairs(getplrs) do
       
       if cmd == "Trapspawn" then
 moveObject(game:GetService("Workspace").Terrain["_Game"].Workspace.Obby.Jump9,CFrame.new(-41.0650024, 1.30000007, -28.601058959961, 0, 0, -1, 0, 1, 0, 1, 0, 0))
+     end
     end
 
 if cmd == "Prison" then  moveObject(game:GetService("Workspace").Terrain["_Game"].Workspace["Basic House"].SmoothBlockModel40,CFrame.new(-10.7921638, 17.3182983, -16.0743637, -0.999961913, -0.0085983118, 0.00151610479, -1.01120179e-08, 0.173648253, 0.98480773, -0.00873095356, 0.984770179, -0.173641637))
