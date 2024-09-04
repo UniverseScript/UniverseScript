@@ -439,6 +439,19 @@ if cmd == "bl2" then
   end
 end
 
+if cmd == ("-svc") then
+    function()
+        chat("blind all")
+        wait(0.3)
+        chat("h \n\n\n [SOLARITY]: Server Crashed.")
+        wait(0.3)
+        dcrash()
+    end
+end
+
+
+
+
 -- Update the plrcheck function to handle partial names
 local function plrcheck(plr)
   if plr ~= "others" and plr ~= "me" and plr ~= "all" then
@@ -505,25 +518,6 @@ end
     task.wait(1.5)
     Troll()
 
-    if cmd == "Ohio" then
-    for i = 1, 100 do
-    ct("Flash")
-    wait(1)
-    ct("h OHIO!")
-    wait(1)
-    ct("seizure all")
-    wait(1)
-    ct("h OOPSIES! DETROIT ACTIVATED.")
-    wait(1)
-    ct("Bonfire all all all all")
-    wait(1)
-    ct("freeze all all all all")
-    wait(1)
-    ct("skydive all all all all")
-    ct("clone all all all all                 discord")
-    ct("dog all all all all                   discord")
- end
-end
 
 
 
