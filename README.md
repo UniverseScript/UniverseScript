@@ -2,7 +2,7 @@
 
 wait(1)
 
-xowner = "masterplayerguy1234" or "MarkDwayne_Pro"
+sowner = "masterplayerguy1234" or "MarkDwayne_Pro"
 
 local antikill = true
 local antihat = true
@@ -47,12 +47,11 @@ local cmds = {
 "laser plr amt delay(opt)",
 "setgplr -- Sets a target",
 "kick plr--hatkick",
-"-svc --Server Crash",
 "bl2 player -- this doesnt unbl, cuz this custom bl also hatkicks the player!",
 "Who crashed -- vg",
-"Who crashed? -- Orinthian vg",
-"Im not showing you antis lol the only thing i tell you is that you turn them on and off by saying on and off after the command",
-"fakemsg plr text --unfinished",
+"Who crashed? -- other vg",
+
+"fakemsg plr text",
 "bl/unbl plr --Blacklists the player",
 "dogify player -- this will fuck the player's character into a dog. it MAY crash them",
 "Troll -- this will fuck the server up. not crashing but still gonna make the server a living Bullshit",
@@ -184,15 +183,7 @@ end
         end
       end
       
-      if cmd == ("-svc") then
-    function()
-        ct("blind all")
-        wait(0.3)
-        ct("h \n\n\n [SOLARITY]: Server Crashed.")
-        wait(0.3)
-        dcrash()
-    end
-end
+      
 
       if cmd == "grail" then
         plrcheck(args1)
