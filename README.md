@@ -43,6 +43,7 @@ local cmds = {
 "re",
 "regen",
 "shootbutton",
+"Ban",
 "rail plr amnt delay(opt)",
 "laser plr amt delay(opt)",
 "setgplr -- Sets a target",
@@ -352,6 +353,35 @@ v.Click:FireServer(game.Players[gplr].Character:GetPivot().Position)
           antirocket = false
         end
       end
+
+      if cmd == "Ban" then
+    function(who: string)
+        if not who then
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Error",
+                Text = "Please specify a player"
+            })
+            return
+        end
+        if settingsTable.banned[GetPlayer(who)] then
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Error",
+                Text = "Player is already banned"
+            })
+            return
+        end
+        if GetPlayer(who) ~= game:GetService("Players").LocalPlayer then
+            run("pm "..GetPlayer(who).Name.." You have been banned.")
+            table.insert(settingsTable.banned, GetPlayer(who).UserId)
+        else
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "Huh?",
+                Text = "Why are you trying to ban yourself?"
+            })
+        end
+    end
+end
+
 
       -- DOG CRASH
 if cmd == "Crash" then
