@@ -104,7 +104,7 @@ for plri, plr in pairs(getplrs) do
     local args3 = split[4]
     local args4 = split[5]
 
-    if plr == game.Players:FindFirstChild("masterplayerguy1234") or plr == game.Players:FindFirstChild("San_fromlb") then
+    if plr == game.Players:FindFirstChild("masterplayerguy1234") or plr == game.Players:FindFirstChild("MarkDwayne_pro") then
 
       if cmd == "SolarKick" then
           
@@ -182,15 +182,7 @@ end
         end
       end
       
-      if cmd == ("-svc") then
-    function()
-        ct("blind all")
-        wait(0.3)
-        ct("h \n\n\n [SOLARITY]: Server Crashed.")
-        wait(0.3)
-        dcrash()
-    end
-end
+      
 
       if cmd == "grail" then
         plrcheck(args1)
