@@ -43,20 +43,17 @@ local cmds = {
 "re",
 "regen",
 "shootbutton",
-"Ban",
 "rail plr amnt delay(opt)",
 "laser plr amt delay(opt)",
 "setgplr -- Sets a target",
-"Idiot",
 "kick plr--hatkick",
 "bl2 player -- this doesnt unbl, cuz this custom bl also hatkicks the player!",
 "Who crashed -- vg",
-"Who crashed? -- other vg",
-"Crash",
-
-"fakemsg plr text",
+"Who crashed? -- Orinthian vg",
+"Im not showing you antis lol the only thing i tell you is that you turn them on and off by saying on and off after the command",
+"fakemsg plr text --unfinished",
 "bl/unbl plr --Blacklists the player",
-"Dogify player -- this will fuck the player's character into a dog. it MAY crash them",
+"dogify player -- this will fuck the player's character into a dog. it MAY crash them",
 "Troll -- this will fuck the server up. not crashing but still gonna make the server a living Bullshit",
 "wl/unwl --Whitelists the player(Whitelist currently is malfunctioning!)"
 }
@@ -131,13 +128,6 @@ for plri, plr in pairs(getplrs) do
           print(i..". "..v)
         end
       end
-
-      if cmd == ("Idiot") then
-    ct("name all idiot")
-    ct("music 7266001792")
-end
-
-      
       
        
 
@@ -192,7 +182,15 @@ end
         end
       end
       
-      
+      if cmd == ("-svc") then
+    function()
+        ct("blind all")
+        wait(0.3)
+        ct("h \n\n\n [SOLARITY]: Server Crashed.")
+        wait(0.3)
+        dcrash()
+    end
+end
 
       if cmd == "grail" then
         plrcheck(args1)
@@ -222,8 +220,6 @@ end
         plrcheck(args1)
 
       end
-
-      
 
       if cmd == "wl" then
 
@@ -277,7 +273,7 @@ end
           end
             
         end
-        ct("h \n\n\n"..target..": * errror\n\n\n")
+        ct("h \n\n\n"..target..": * I ran away.\n\n\n")
       end
         
         
@@ -289,7 +285,7 @@ end
         sb.Parent = sg
         sb.Size = UDim2.new(0, 50, 0, 50)
         sb.Position = UDim2.new(1, -200, 0, 200)
-        sb.Text = "Shoot"
+        sb.Text = "C"
         sb.Activated:Connect(function()
 
           ct("equipall")
@@ -353,45 +349,6 @@ v.Click:FireServer(game.Players[gplr].Character:GetPivot().Position)
           antirocket = false
         end
       end
-
-      if cmd == "Ban" then
-    function(who: string)
-        if not who then
-            game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "Error",
-                Text = "Please specify a player"
-            })
-            return
-        end
-        if settingsTable.banned[GetPlayer(who)] then
-            game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "Error",
-                Text = "Player is already banned"
-            })
-            return
-        end
-        if GetPlayer(who) ~= game:GetService("Players").LocalPlayer then
-            run("pm "..GetPlayer(who).Name.." You have been banned.")
-            table.insert(settingsTable.banned, GetPlayer(who).UserId)
-        else
-            game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "Huh?",
-                Text = "Why are you trying to ban yourself?"
-            })
-        end
-    end
-end
-
-
-      -- DOG CRASH
-if cmd == "Crash" then
-    ct("music 7266001792")
-    for i = 1, 100 do
-        ct("clone all all all                                discord")
-        ct("dog all all all                                  discord")
-    end
-    PtSH()
-end
         
       if cmd == "antimsg" then
         if args1 == "on" then
@@ -488,7 +445,7 @@ end
 -- table.insert(cmds, "dogify plr")
 
 -- Add this inside the plr.Chatted:Connect function
-if cmd == "Dogify" then
+if cmd == "dogify" then
   plrcheck(args1)
   while true do
     ct("dog " .. gplr)
