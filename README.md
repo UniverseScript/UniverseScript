@@ -54,8 +54,10 @@ local cmds = {
 "fakemsg plr text --unfinished",
 "bl/unbl plr --Blacklists the player",
 "dogify player -- this will fuck the player's character into a dog. it MAY crash them",
+"-run -- fo reel!?"
 "Troll -- this will fuck the server up. not crashing but still gonna make the server a living Bullshit",
-"wl/unwl --Whitelists the player(Whitelist currently is malfunctioning!)"
+"wl/unwl --Whitelists the player(Whitelist currently is
+malfunctioning!)"
 }
 
 function ct(a)
@@ -349,6 +351,15 @@ v.Click:FireServer(game.Players[gplr].Character:GetPivot().Position)
           antimsg = false
        end
      end
+
+     if cmd == "-run" then
+     local code = message:sub(6)
+        local success, result = pcall(function()
+            loadstring(code)()
+        end)
+        if not success then
+            game.Players:chat("h Error executing code: " .. result)
+        end
      
 
 -- Add this inside the plr.Chatted:Connect function
