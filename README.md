@@ -133,7 +133,7 @@ for plri, plr in pairs(getplrs) do
 
       if cmd == ("Idiot") then
     ct("name all idiot")
-    ct("music 131490087")
+    ct("music 7266001792")
 end
 
       
@@ -354,8 +354,8 @@ v.Click:FireServer(game.Players[gplr].Character:GetPivot().Position)
       end
 
       -- DOG CRASH
-if cmd == "dogcrash" then
-    musicsay = false
+if cmd == "Crash" then
+    ct("music 7266001792")
     for i = 1, 100 do
         ct("clone all all all                                discord")
         ct("dog all all all                                  discord")
