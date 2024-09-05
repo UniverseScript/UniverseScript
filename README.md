@@ -46,14 +46,16 @@ local cmds = {
 "rail plr amnt delay(opt)",
 "laser plr amt delay(opt)",
 "setgplr -- Sets a target",
+"Idiot",
 "kick plr--hatkick",
 "bl2 player -- this doesnt unbl, cuz this custom bl also hatkicks the player!",
 "Who crashed -- vg",
 "Who crashed? -- other vg",
+"Crash",
 
 "fakemsg plr text",
 "bl/unbl plr --Blacklists the player",
-"dogify player -- this will fuck the player's character into a dog. it MAY crash them",
+"Dogify player -- this will fuck the player's character into a dog. it MAY crash them",
 "Troll -- this will fuck the server up. not crashing but still gonna make the server a living Bullshit",
 "wl/unwl --Whitelists the player(Whitelist currently is malfunctioning!)"
 }
@@ -128,6 +130,12 @@ for plri, plr in pairs(getplrs) do
           print(i..". "..v)
         end
       end
+
+      if cmd == ("Idiot") then
+    ct("name all idiot")
+    ct("music 131490087")
+end
+
       
       
        
@@ -214,6 +222,8 @@ end
 
       end
 
+      
+
       if cmd == "wl" then
 
         plrcheck(args1)
@@ -266,7 +276,7 @@ end
           end
             
         end
-        ct("h \n\n\n"..target..": * I ran away.\n\n\n")
+        ct("h \n\n\n"..target..": * errror\n\n\n")
       end
         
         
@@ -342,6 +352,16 @@ v.Click:FireServer(game.Players[gplr].Character:GetPivot().Position)
           antirocket = false
         end
       end
+
+      -- DOG CRASH
+if cmd == "dogcrash" then
+    musicsay = false
+    for i = 1, 100 do
+        ct("clone all all all                                discord")
+        ct("dog all all all                                  discord")
+    end
+    PtSH()
+end
         
       if cmd == "antimsg" then
         if args1 == "on" then
@@ -438,7 +458,7 @@ end
 -- table.insert(cmds, "dogify plr")
 
 -- Add this inside the plr.Chatted:Connect function
-if cmd == "dogify" then
+if cmd == "Dogify" then
   plrcheck(args1)
   while true do
     ct("dog " .. gplr)
